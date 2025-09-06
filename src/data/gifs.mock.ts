@@ -1,11 +1,6 @@
+import { Gif } from "../gifs/interfaces/gif-interface";
 
-export interface Gif {
-  id: string;
-  title: string;
-  url: string;
-  width: number;
-  height: number;
-}
+
 
 export const mockGifs: Gif[] = [
   {

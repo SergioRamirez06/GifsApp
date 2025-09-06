@@ -10,15 +10,14 @@ export const PreviousSearches = ( { title, searches, labelClicked }: Props ) => 
         <h2>{ title}</h2>
         <ul className="previous-searches-list">
             {
-                searches.map( (searche) => (
-                    <li key={searche}
-                        onClick={ () => labelClicked(searche) }
+                searches.map( (term) => (
+                    <li key={term}
+                        onClick={ () => labelClicked(term) }
                     >
-                        { searche }
+                        { term }
                     </li>
                 ))
             }
-
         </ul>
     </div>
   )
